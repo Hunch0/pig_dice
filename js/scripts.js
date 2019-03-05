@@ -23,7 +23,6 @@ Player.prototype.rollone = function() {
   this.tempscore += this.roll;
   }
 }
-
 // hold
 Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
@@ -31,7 +30,6 @@ Player.prototype.hold = function () {
   this.changeturn();
   alert(this.playerName + " Your turn is over, pass the mouse!");
 }
-
 // changing turn
 Player.prototype.changeturn = function () {
   if (this.roll ===1) {
@@ -54,18 +52,14 @@ Player.prototype.newGame = function () {
   this.totalscore = 0;
   this.playerName ="";
 }
-
 var clearValues = function(){
   $(".player1Name").val("");
   $(".player2Name").val("");
 }
-
-
 // User Interface
 $(document).ready(function() {
 
   $("button#start").click(function(event){
-
     $(".playerConsole").show();
     $(".startMenu").hide();
 
@@ -81,6 +75,7 @@ $(document).ready(function() {
     player1.playerName=player1Name;
     player2.playerName=player2Name;
   });
+
   $("button#new_game").click(function(event){
     $(".playerConsole").hide();
     clearValues();
@@ -127,5 +122,4 @@ $(document).ready(function() {
     player2.winnerCheck();
     player2.changeturn();
   });
-
 });
