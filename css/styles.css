@@ -1,8 +1,5 @@
-/* body{
+body{
   background-color: #0040ff;
-}
-.newGamebtn{
-  text-align: center;
 }
 .jumbotron{
   text-align: center;
@@ -15,6 +12,3 @@
   display: none;
   color: #ffff33;
 }
-.newGamebtn{
-  text-align: center;
-} */
