@@ -81,21 +81,21 @@ $(document).ready(function() {
     player1.playerName=player1Name;
     player2.playerName=player2Name;
   });
-  // $("button#new_game").click(function(event){
-  //   $(".playerConsole").hide();
-  //   clearValues();
-  //   player1.newGame();
-  //   player2.newGame();
-  //   $("#round-total-1").empty();
-  //   $("#total-score-1").empty();
-  //   $("#die-roll-1").empty();
-  //   $("#round-total-2").empty();
-  //   $("#total-score-2").empty();
-  //   $("#die-roll-2").empty();
-  //
-  //   $(".startMenu").show();
-  // });
-  //
+  $("button#new_game").click(function(event){
+    $(".playerConsole").hide();
+    clearValues();
+    player1.newGame();
+    player2.newGame();
+    $("#round-total-1").empty();
+    $("#total-score-1").empty();
+    $("#die-roll-1").empty();
+    $("#round-total-2").empty();
+    $("#total-score-2").empty();
+    $("#die-roll-2").empty();
+
+    $(".startMenu").show();
+  });
+
   // $("button#player1-roll").click(function(event){
   //   player1.roll = throwdice();
   //   $("#die-roll-1").text(player1.roll);
