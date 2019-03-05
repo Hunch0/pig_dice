@@ -46,21 +46,21 @@ Player.prototype.winnerCheck = function () {
     alert(this.playerName + " You are the winner!");
   }
 }
-// // start a new game
-// Player.prototype.newGame = function () {
-//   //debugger;
-//   this.roll = 0;
-//   this.tempscore = 0;
-//   this.totalscore = 0;
-//   this.playerName ="";
-// }
-//
-// var clearValues = function(){
-//   $(".player1Name").val("");
-//   $(".player2Name").val("");
-// }
-//
-//
+// start a new game
+Player.prototype.newGame = function () {
+  //debugger;
+  this.roll = 0;
+  this.tempscore = 0;
+  this.totalscore = 0;
+  this.playerName ="";
+}
+
+var clearValues = function(){
+  $(".player1Name").val("");
+  $(".player2Name").val("");
+}
+
+
 // // User Interface
 // $(document).ready(function() {
 //
