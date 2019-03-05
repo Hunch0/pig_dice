@@ -13,25 +13,25 @@ function Player(turn, playerName) {
   this.turn = turn;
   this.playerName;
 }
-// // checking for 1
-// Player.prototype.rollone = function() {
-//   if (this.roll === 1) {
-//   this.tempscore = 0;
-//   alert("Sorry " + this.playerName + ", You rolled a 1! Your turn is over!")
-//   this.changeturn();
-//   } else {
-//   this.tempscore += this.roll;
-//   }
-// }
-//
-// // hold
-// Player.prototype.hold = function () {
-//   this.totalscore += this.tempscore;
-//   this.tempscore = 0;
-//   this.changeturn();
-//   alert(this.playerName + " Your turn is over, pass the mouse!");
-// }
-//
+// checking for 1
+Player.prototype.rollone = function() {
+  if (this.roll === 1) {
+  this.tempscore = 0;
+  alert("Sorry " + this.playerName + ", You rolled a 1! Your turn is over!")
+  this.changeturn();
+  } else {
+  this.tempscore += this.roll;
+  }
+}
+
+// hold
+Player.prototype.hold = function () {
+  this.totalscore += this.tempscore;
+  this.tempscore = 0;
+  this.changeturn();
+  alert(this.playerName + " Your turn is over, pass the mouse!");
+}
+
 // // changing turn
 // Player.prototype.changeturn = function () {
 //   if (this.roll ===1) {
