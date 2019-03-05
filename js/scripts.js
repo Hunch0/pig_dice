@@ -6,13 +6,13 @@ var throwdice = function () {
   return Math.floor(6*Math.random())+1;
 }
 
-// function Player(turn, playerName) {
-//   this.roll = 0;
-//   this.tempscore = 0;
-//   this.totalscore = 0;
-//   this.turn = turn;
-//   this.playerName;
-// }
+function Player(turn, playerName) {
+  this.roll = 0;
+  this.tempscore = 0;
+  this.totalscore = 0;
+  this.turn = turn;
+  this.playerName;
+}
 // // checking for 1
 // Player.prototype.rollone = function() {
 //   if (this.roll === 1) {
