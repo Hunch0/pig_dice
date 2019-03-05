@@ -32,21 +32,21 @@ Player.prototype.hold = function () {
   alert(this.playerName + " Your turn is over, pass the mouse!");
 }
 
-// // changing turn
-// Player.prototype.changeturn = function () {
-//   if (this.roll ===1) {
-//     this.turn = false;
-//   } else {
-//     this.turn = true;
-//   }
-// }
-// // check for 100
-// Player.prototype.winnerCheck = function () {
-//   if (this.totalscore >= 20) {
-//     alert(this.playerName + " You are the winner!");
-//   }
-// }
-//
+// changing turn
+Player.prototype.changeturn = function () {
+  if (this.roll ===1) {
+    this.turn = false;
+  } else {
+    this.turn = true;
+  }
+}
+// check for 100
+Player.prototype.winnerCheck = function () {
+  if (this.totalscore >= 20) {
+    alert(this.playerName + " You are the winner!");
+  }
+}
+// // start a new game
 // Player.prototype.newGame = function () {
 //   //debugger;
 //   this.roll = 0;
