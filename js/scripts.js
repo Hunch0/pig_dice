@@ -2,10 +2,10 @@
 var player1="";
 var player2="";
 
-// var throwdice = function () {
-//   return Math.floor(6*Math.random())+1;
-// }
-//
+var throwdice = function () {
+  return Math.floor(6*Math.random())+1;
+}
+
 // function Player(turn, playerName) {
 //   this.roll = 0;
 //   this.tempscore = 0;
